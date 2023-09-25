@@ -34,7 +34,7 @@ function PlantCard({ plant, onUpdatePlant, onDeletePlant }) {
   }
 
   function handleDelete() {
-    fetch(`http://localhost:6001/plants/${id}`, { method: "DELETE" }).then(
+    fetch(`http://localhost:6001/plants/${id}`, { method: "DELETE" }).then(() =>
       onDeletePlant(id)
     );
   }

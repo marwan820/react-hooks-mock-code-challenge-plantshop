@@ -35,7 +35,7 @@ function PlantPage() {
 
   function handleDeletePlant(id){
 const filterPlants = plants.filter((plant) => plant.id !== id)
-  }
+ return setPlants(filterPlants)}
   return (
     <main>
       <NewPlantForm onAddPlant={handleAddPlant} />
